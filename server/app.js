@@ -68,3 +68,16 @@ endDate.setDate(endDate.getDate() + daysUntilFriday);
 // Format to ISO string
 // console.log("Start Date (Tomorrow):", startDate.toISOString());
 // console.log("End Date (This Friday):", endDate.toISOString());
+
+
+
+
+PORT =4000
+NODE_ENV=development
+MONGO_URI=mongodb+srv://oyed-enoch:Iyanuoluwa_1@cluster0.syiyllu.mongodb.net/Inec-voting?retryWrites=true&w=majority&appName=Cluster0
+JWT_SECRET=enochoyedejiolaoluwa
+JWT_EXPIRES_TIME=7d
+COOKIE_EXPIRES_TIME=7
+CLOUDINARY_CLOUD_NAME= dd7rowxyl
+CLOUDINARY_API_KEY=964368951395426
+CLOUDINARY_API_SECRET=HisVxQDfIqHDK3BmezHSBO3aprk
