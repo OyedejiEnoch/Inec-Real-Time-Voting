@@ -2,21 +2,10 @@ import {createApi, fetchBaseQuery} from "@reduxjs/toolkit/query/react"
 import {setUser , setLoading, UserDetails} from "@/redux/features/authSlice"
 
 
-
-type UpdateProfile ={
-    name:string,
-    email:string
-}
-type UpdatePassword ={
-    oldPassword:string,
-    newPassword:string
-}
-
-
 export const userApi = createApi({
     reducerPath:"userApi",
     tagTypes:["User"],
-    baseQuery: fetchBaseQuery({baseUrl: 'http://localhost:4000/api', credentials: 'include', }),
+    baseQuery: fetchBaseQuery({baseUrl: 'https://inec-real-time-voting.onrender.com/api', credentials: 'include', }),
 
     endpoints: (builder)=>({
         userProfile: builder.query<UserDetails, void | null>({

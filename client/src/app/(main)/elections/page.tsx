@@ -1,7 +1,6 @@
 "use client"
 import { useUserProfileQuery } from '@/redux/api/userApi'
 import image1 from "@/assets/nigeriaMap.jpg"
-import image2 from "@/assets/election2.jpg"
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -11,7 +10,7 @@ import { useGetElectionsQuery } from '@/redux/api/api'
 import { Loader2 } from 'lucide-react'
 
 const Elections = () => {
-  const {data} =useUserProfileQuery()
+  const {} =useUserProfileQuery()
   const {data:elections, isLoading, error}=useGetElectionsQuery(null)
 
     useGSAP(()=>{

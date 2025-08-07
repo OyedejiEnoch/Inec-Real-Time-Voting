@@ -22,6 +22,8 @@ export const registerVoter = async (req, res, next)=>{
             expires: new Date(
             Date.now() + process.env.COOKIE_EXPIRES_TIME * 24 * 60 * 60 * 1000
             ),
+            sameSite: "None",
+            secure: true,
         }).status(201).json({
             success:true,
             userDetails,
@@ -75,6 +77,8 @@ export const loginVoter = async(req, res, next)=>{
             expires: new Date(
                 Date.now() + process.env.COOKIE_EXPIRES_TIME * 24 * 60 * 60 * 1000
             ),
+            sameSite: "None",
+            secure: true,
         }).status(200).json({
             success:true,
             message: "Login successful",

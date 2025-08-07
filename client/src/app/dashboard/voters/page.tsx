@@ -1,8 +1,7 @@
 'use client'
 import React from 'react'
-import { columns, Users } from "./columns"
+import { columns } from "./columns"
 import { DataTable } from "./data-table"
-import { usersData } from '@/constants'
 import { useGetAllVotersQuery } from '@/redux/api/api'
 import { Loader2 } from 'lucide-react'
  

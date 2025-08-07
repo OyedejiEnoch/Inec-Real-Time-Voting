@@ -1,5 +1,4 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { setUser } from '../features/authSlice';
 import { userApi } from './userApi';
 
 type UserDetails ={
@@ -40,7 +39,7 @@ type RegisterUser = {
 
 export const authApi = createApi({
     reducerPath: 'authApi',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4000/api', credentials: 'include',  }),
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://inec-real-time-voting.onrender.com/api', credentials: 'include',  }),
     endpoints: (builder) => ({
         login: builder.mutation<User, LoginCredentials>({
             query: (credentials) => ({

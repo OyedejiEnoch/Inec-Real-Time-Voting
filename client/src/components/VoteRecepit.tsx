@@ -1,17 +1,10 @@
 // VoteReceipt.tsx
 import { useRef } from 'react';
 // @ts-ignore
-import html2pdf from 'html2pdf.js';
 import { useGetVoteByVoterQuery } from '@/redux/api/api';
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
-  DialogFooter,
-  DialogHeader,
-  DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
 import { useRouter } from 'next/navigation';

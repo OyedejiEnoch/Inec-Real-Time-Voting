@@ -1,5 +1,4 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { create } from 'domain';
 
 
 type Candidate={
@@ -69,7 +68,7 @@ type Vote ={
 
 export const api =createApi({
     reducerPath: 'api',
-    baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:4000', credentials: 'include' }),
+    baseQuery: fetchBaseQuery({ baseUrl: 'https://inec-real-time-voting.onrender.com', credentials: 'include' }),
     tagTypes: ['Party', 'Election', 'Candidate', 'Vote'], // Example tag types
 
     endpoints: (builder) => ({

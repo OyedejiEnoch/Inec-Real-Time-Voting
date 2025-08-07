@@ -1,9 +1,6 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-import canImg1 from "@/assets/tinubu.jpg"
-import canImg2 from "@/assets/atiku.jpg"
-import canImg3 from "@/assets/peter.jpg"
 import AddCandidate from './AddCandidate'
 import { useGetCandidatesQuery } from '@/redux/api/api'
 import { Loader2 } from 'lucide-react'

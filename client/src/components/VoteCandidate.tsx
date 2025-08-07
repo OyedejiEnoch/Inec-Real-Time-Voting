@@ -1,17 +1,13 @@
 "use client"
  
 import * as React from "react"
-import { Button } from "@/components/ui/button"
 import {
   Dialog,
   DialogContent,
-  DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { electoralCandidates } from "@/constants"
 import Image from "next/image"
 import { CheckCircle, Loader2 } from "lucide-react"
 import CastVote from "./CastVote"
@@ -20,7 +16,7 @@ import { useGetCandidateByIdQuery } from "@/redux/api/api"
 const VoteCandidate = ({id}:{id:number}) => {
 
     // i passed the candidate id, from the elections candidate array, remember we stored each candidate id, in an array for the election
-    const {data:result, isLoading, error}=useGetCandidateByIdQuery(id) //we fetch the details of each candidate
+    const {data:result, isLoading,}=useGetCandidateByIdQuery(id) //we fetch the details of each candidate
     const candidate =result?.candidate
     console.log(candidate) //inside we have the party this candidate is attached to and the election, we need this for the voting
 

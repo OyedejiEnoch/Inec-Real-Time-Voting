@@ -1,15 +1,13 @@
 "use client"
 import Image from 'next/image'
 import React from 'react'
-import pdpImg from "@/assets/pdp.jpg"
-import apcImg from "@/assets/apc.jpg"
 import AddNewParty from './AddNewParty'
 import { useGetPartiesQuery } from '@/redux/api/api'
 import { Loader2 } from 'lucide-react'
 
 const Party = () => {
 
-  const {data:parties, isLoading, error}=useGetPartiesQuery(null)
+  const {data:parties, isLoading,}=useGetPartiesQuery(null)
   console.log(parties)
 
   if(isLoading){

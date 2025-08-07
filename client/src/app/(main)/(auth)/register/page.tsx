@@ -53,7 +53,7 @@ const Register = () => {
                 const res = await register(values)
             } catch (error) {
                  console.error('Login failed', error);
-                 toast.error(error?.data!.message! || "Registration failed")
+                 toast.error("Registration failed")
             }
     }
 

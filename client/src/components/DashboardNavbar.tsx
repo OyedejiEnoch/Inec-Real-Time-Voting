@@ -2,24 +2,20 @@ import React from 'react'
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuPortal,
   DropdownMenuSeparator,
-  DropdownMenuShortcut,
-  DropdownMenuSub,
-  DropdownMenuSubContent,
-  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { LogOut, Settings, User } from 'lucide-react'
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar'
+import { SidebarTrigger } from './ui/sidebar'
 
 const DashboardNavbar = () => {
   return (
     <div className='w-full border-b border-neutral-500/10 py-6 px-4'>
       <div className='flex items-center justify-end'>
+      <SidebarTrigger />
 
             <DropdownMenu>
                 <DropdownMenuTrigger>

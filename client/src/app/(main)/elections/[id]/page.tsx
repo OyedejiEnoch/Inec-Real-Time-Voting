@@ -1,7 +1,6 @@
 "use client"
 import React, { useEffect } from 'react'
 import Image from 'next/image'
-import { electoralCandidates } from '@/constants'
 import VoteCandidate from '@/components/VoteCandidate'
 import {useGSAP} from "@gsap/react"
 import gsap from 'gsap'
@@ -17,7 +16,7 @@ const SingleElectionPage = () => {
   const params = useParams(); // useParams is safe in client components
   const id = params.id;
 
-  const {data:election, isLoading, error}=useGetSingleElectionQuery(id)
+  const {data:election, isLoading}=useGetSingleElectionQuery(id)
   
    useEffect(()=>{
     if(user?.hasVoted){
