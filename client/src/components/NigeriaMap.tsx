@@ -79,13 +79,12 @@ const NigeriaMap = () => {
         valueField: "totalVotes",
         calculateAggregates: true,
         // ✅ This tells amCharts to look for the `fill` field in the data
-        propertyFields: {
-          fill: "fill"
-        }
+        // propertyFields: {
+        //   fill: "fill"
+        // }
       })
     );
 
-  console.log(polygonSeries.mapPolygons.dataItems)
 
 
     // Add the data
