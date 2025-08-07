@@ -17,7 +17,8 @@ const app = express();
 
 dotenv.config({path: 'config/.env'});
 const allowedOrigins = [
-    "http://localhost:3000"  
+    "http://localhost:3000",
+    "https://inec-real-time-voting.vercel.app"  
 ];
 app.use(
   cors({
